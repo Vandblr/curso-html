@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Não utilizar STYLE</title>
+    
+    <style>
+        @font-face {
+        font-family: League;
+        src: url("assets/League.otf");
+    }
+        body{
+            background-color: darkblue;/*Má prática utilizar o nome da cor*/
+            /*rgb(0..255, 0..255, 0..255) Red Green Blue*/
+            background-color: rgb(0, 0, 139);
+            /* hexadecimal (#0-9a-f)  #16opcoes{6} 16opcoes*/
+            background-color:#00008b;
+        }
+
+        h1{
+            color: #fff;
+            text-transform: uppercase;
+            text-align: center;
+            font-family: 'League';
+        }
+
+        h1:hover{
+            color: #ca1616;
+        }
+
+        img{
+            border-top: solid;
+            border-top: purple;
+            border-top-width: 5px;
+
+            border-right-color: rgb(0, 100,0);
+            border-right-width: 8px;
+            border-right-style: dashed;
+
+            border-bottom-width: 10x;
+            border-bottom-color: rgb(201, 81, 101);
+            border-bottom-style: groove;
+
+            border-left-color: rgb(217, 27, 0);
+            border-left-width: 14px;
+            border-left-style: ridge;
+            opacity: 0.9;
+            transition: transform 1s;
+            
+            
+        }
+        img:hover {
+            opacity: 1;
+            transform: scale(0.8);
+        }
+         /*# serve para selecionar o elemento o id
+         exemplo: <img id="banner"*/
+        P#primeiro{
+            color: #adff2f;
+        }
+
+        p#segundo{
+            color: #ff8c00;
+        }
+
+        p#terceiro{
+            color: #4169e1;
+        }
+
+        p#quarto{
+            color: #a9a9a9;
+        }
+
+        p#quinto{
+            color: #00ced1;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Motivos de não jogar LOL</h1>
+    <p id="primeiro">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur odio voluptatibus tenetur ullam officia,
+        doloremque cupiditate
+        labore excepturi ducimus eos debitis aspernatur. Rerum eaque laborum tempora consectetur possimus dolorum
+        voluptates!</p>
+    <p id="segundo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat laborum iure doloribus quam laudantium minima.
+        Quae numquam, cupiditate minima obcaecati ex accusantium
+        accusamus explicabo maxime praesentium. Minima incidunt repellat debitis.</p>
+    <p id="terceiro">Lorem tipo slah lore dolor sit amet consectetur adipisicing elit. Esse consectetur animi, a debitis tempora optio
+        consequatur
+        ullam soluta quis iure quibusdam error doloribus fuga vero reiciendis laborum culpa magni! Iusto.</p>
+    <p id="quarto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ex expedita ut sunt quas animi
+        dolorum omnis hic temporibus deleniti error ad, laborum dolore eum blanditiis aliquam dolor reiciendis sequi!
+    </p>
+    <p id="quinto">Lorem, ipsum dolores sit amet consectetur adipisicing elit. Labore repellat eos minima maiores,
+        molestias doloremque porro reiciendis quo rerum quibusdam odio, nihil dolor quasi quia sequi ab excepturi odit
+        eum.</p>
+
+        <img src="https://picsum.photos/id/684/600/400" alt="">
+
+</body>
+
+</html>

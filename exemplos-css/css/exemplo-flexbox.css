@@ -1,0 +1,56 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.pokemons{
+    display: flex;
+
+    /*flex direction define como seré apresentado os elementos (linhas, colunas, linhas inversas, colunas-inversas
+    - row: disposição horizontal(default "padrão")
+    column: disposição vrtical
+    -row reverse disposição horizontal inertida
+    -colunm-reverse disposição vertical invertida*/
+    flex-direction: row;
+    /*flex wrap define se os itens devem quebrar para uma nova linha/linha coluna quando não houver
+    espaço disponivel
+    -nowrap: não quebra linha,sugira uma nova rolagem
+    -wrap: quebra a linha*/
+
+    flex-wrap: wrap;/* aplica espaçamento entre os elementos*/
+    gap: 10px;
+
+
+    
+}
+.pokemon{
+    background-color: darkgray;
+    width: 300px;
+}
+
+.pokemon-nome{
+    font-size: 25px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+}
+
+.pokemon-foto {
+    width: 260px;
+}
+
+.pokemon-tipos, .pokemon-fraquezas{
+    display: flex;
+    justify-content: center; /* define como será o distribuidos os elementos horizontalmente
+    -flex start: alinhado na esquerda
+    -flex-end : alinhado na direita
+    -center: no centro
+    -space-between: alinhados com o maximo de espaço entre eles, sem espaços nas extremidades
+    -space-around: alinhados com espaço igual em torno de cada item (incluindo as extremidades)
+    -space-evelyn: alinhados com espaço igual entre si e nas extremidades*/
+}
+
+.pokemon-tipo, .pokemon-fraqueza{
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-transform: capitalize;
+}
